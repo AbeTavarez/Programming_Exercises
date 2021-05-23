@@ -1,4 +1,4 @@
-// RECURSION EXE.1
+// RECURSION EXE.1 COUNTDOWN !!! 
 
 // USING LOOPS
 function countDownLoop(num){
@@ -21,7 +21,7 @@ function countDownRecursion(num){
     }
     console.log(num)
     num = num -1
-    // Recursive Call\
+    // Recursive Call
     countDownRecursion(num)
 };
 

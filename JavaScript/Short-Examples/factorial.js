@@ -6,4 +6,15 @@ function factorialize(num){
     console.log(factorial)
 }
 
-factorialize(5)
+//factorialize(5)
+
+
+// recursive
+function factorialRecursive(num){
+    if (num <= 1) return 1
+
+    return num * factorialRecursive(num-1)
+}
+
+console.log(factorialRecursive(0))
+

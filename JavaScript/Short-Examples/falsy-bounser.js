@@ -8,20 +8,27 @@
 
 
 function bouncer(arr){
-    // let falsy = [false, null, 0, "", undefined, NaN]
-
-    // console.log(Boolean(falsy[1]))
-    // console.log(falsy.splice(0,1, 'me'))
-    // console.log(falsy)
-    for (let x in arr) {
-        let val = Boolean(arr[x])
-        console.log(val)
-        if (val === false || null || 0 || "" || undefined || NaN){
-            arr.splice(x,1)
-        }
-        
+    let true_arr = []
+    for (let x in arr) {    
+        if (Boolean(arr[x]) === true) {
+            true_arr.push(arr[x])
+        }   
     }
-    console.log(arr)
+    return true_arr
 }
 
-console.log(bouncer([7, "ate", "", false, 9]))
+
+// function bouncer(arr) {
+//     arr.filter(x => Boolean(x) === true)
+//     return arr
+//   }
+
+// function bouncer( arr ){
+//     return arr.filter( function( value ){
+//         return value;
+//     });
+// }
+
+let output = bouncer([7, "ate", false, 9])
+
+console.log(output)

@@ -1,5 +1,3 @@
-
-
 # Tuples are sequeces just like a list BUT Tuples are Immutable
 # This means you can't change the values in a Tuple
 # NOT ALLOWED: .sort(), .append(), .reverse()

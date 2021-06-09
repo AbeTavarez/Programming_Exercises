@@ -38,3 +38,5 @@ lst = sorted(lst, reverse=True) # here we perform the sorting
 for v,k in lst[:10]: # here we keep the same order v,k because we flipped them before
     print(f'{k}:{v}') # now we print them in the order we need
 
+### List Comprehension ######################################
+#print( sorted( [ (v,k) for k,v in counts.items() ] ) )
